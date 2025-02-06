@@ -2,8 +2,8 @@
 page_title                                : EstateSail - Coming Soon                                    
 
 # App Info
-ios_app_id                                : 1234793120                                
-ios_app_country                           : us                                        
+ios_app_id                                :                                
+ios_app_country                           :                                        
 
 appstore_link                             :                                           
 playstore_link                            :                                           
@@ -14,7 +14,7 @@ app_name                                  : EstateSail
 app_price                                 : Coming Soon                                           
 app_description                           : The future of estate sale management is coming. EstateSail will transform how you run estate sales with AI-powered appraisals and professional tools.
 
-enable_smart_app_banner                   : true                                      
+enable_smart_app_banner                   : false                                      
 
 # Screenshots
 device_color                              : black
@@ -34,22 +34,6 @@ mastodon_link                             :
 
 # Feature List                            
 features                                  :
-
-  - title                                 : Join the Waitlist
-    description                           : Be the first to know when EstateSail launches. Get early access and exclusive features.
-    fontawesome_icon_name                 : bell
-    
-  - title                                 : AI-Powered Appraisals
-    description                           : Coming soon - Advanced AI technology that will help you accurately appraise items and generate professional descriptions instantly.
-    fontawesome_icon_name                 : robot
-
-  - title                                 : Professional Tools
-    description                           : Coming soon - A complete suite of tools designed specifically for estate sale professionals.
-    fontawesome_icon_name                 : tools
-
-  - title                                 : Smart Management
-    description                           : Coming soon - Streamline your entire estate sale process with our intelligent management system.
-    fontawesome_icon_name                 : tasks
 
 # Theme Settings
 topbar_color                              : "#2C3E50"
