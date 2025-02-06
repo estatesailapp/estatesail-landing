@@ -1,18 +1,18 @@
 #page title
-page_title                                : EstateSail - Professional Estate Sale Management                                    
+page_title                                : EstateSail - Coming Soon                                    
 
 # App Info
-ios_app_id                                : 1234793120                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
+ios_app_id                                : 1234793120                                
 ios_app_country                           : us                                        
 
-appstore_link                             :                                           # Will auto-populate when app is live
+appstore_link                             :                                           
 playstore_link                            :                                           
 presskit_download_link                    :                                           
 
 app_icon                                  : assets/app-icon-new.png                      
 app_name                                  : EstateSail                                           
-app_price                                 : Free                                           
-app_description                           : Transform your estate sale business with AI-powered appraisals and professional listing management.
+app_price                                 : Coming Soon                                           
+app_description                           : The future of estate sale management is coming. EstateSail will transform how you run estate sales with AI-powered appraisals and professional tools.
 
 enable_smart_app_banner                   : true                                      
 
@@ -35,29 +35,21 @@ mastodon_link                             :
 # Feature List                            
 features                                  :
 
-  - title                                 : AI-Powered Appraisals
-    description                           : Leverage advanced AI technology to accurately appraise items and generate professional descriptions instantly.
-    fontawesome_icon_name                 : robot
+  - title                                 : Join the Waitlist
+    description                           : Be the first to know when EstateSail launches. Get early access and exclusive features.
+    fontawesome_icon_name                 : bell
     
-  - title                                 : Smart Photo Analysis
-    description                           : Take photos of items and let our AI identify brands, materials, and key details automatically.
-    fontawesome_icon_name                 : camera
+  - title                                 : AI-Powered Appraisals
+    description                           : Coming soon - Advanced AI technology that will help you accurately appraise items and generate professional descriptions instantly.
+    fontawesome_icon_name                 : robot
 
-  - title                                 : Professional Listings
-    description                           : Create beautiful, detailed listings with measurements, conditions, and pricing optimized for maximum value.
-    fontawesome_icon_name                 : tag
+  - title                                 : Professional Tools
+    description                           : Coming soon - A complete suite of tools designed specifically for estate sale professionals.
+    fontawesome_icon_name                 : tools
 
-  - title                                 : E-commerce Integration
-    description                           : Seamlessly sync your inventory with popular platforms like Shopify to expand your reach.
-    fontawesome_icon_name                 : store
-
-  - title                                 : Inventory Management
-    description                           : Keep track of all your items, categories, and sales in one organized platform.
-    fontawesome_icon_name                 : boxes
-  
-  - title                                 : Expert Insights
-    description                           : Get valuable market insights and pricing recommendations based on extensive estate sale data.
-    fontawesome_icon_name                 : chart-line
+  - title                                 : Smart Management
+    description                           : Coming soon - Streamline your entire estate sale process with our intelligent management system.
+    fontawesome_icon_name                 : tasks
 
 # Theme Settings
 topbar_color                              : "#2C3E50"
