@@ -16,7 +16,9 @@ app_description                           : Transform your estate sale business 
 
 enable_smart_app_banner                   : true                                      
 
-
+# Screenshots
+device_color                              : black
+your_screenshot                           : yourscreenshot.png
 
 # Information About Yourself
 your_name                                 : EstateSail Team                                
@@ -29,8 +31,6 @@ twitter_username                          :
 github_username                           : 
 youtube_username                          :
 mastodon_link                             : 
-
-
 
 # Feature List                            
 features                                  :
@@ -58,8 +58,6 @@ features                                  :
   - title                                 : Expert Insights
     description                           : Get valuable market insights and pricing recommendations based on extensive estate sale data.
     fontawesome_icon_name                 : chart-line
-
-
 
 # Theme Settings
 topbar_color                              : "#2C3E50"
