@@ -1,1 +1,20 @@
-<!-- Features section removed -->
+{% if site.features %}
+<div class="features">
+    <div class="features-container">
+        {% for feature in site.features %}
+            <div class="feature">
+                <div>
+                    <span class="fa-stack fa-1x">
+                        <i class="iconBack fas fa-circle fa-stack-2x"></i>
+                        <i class="iconTop fas fa-{{ feature.fontawesome_icon_name }} fa-stack-1x"></i>
+                    </span>
+                </div>
+                <div class="feature-text-container">
+                    <span class="feature-title">{{ feature.title }}</span>
+                    <span class="feature-text">{{ feature.description }}</span>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
