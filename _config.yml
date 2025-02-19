@@ -34,6 +34,29 @@ mastodon_link                             :
 
 # Feature List                            
 features                                  :
+  - title                                 : AI-Powered Inventory
+    description                           : Instantly scan and catalog items using AI. Get automatic pricing recommendations based on real market data.
+    fontawesome_icon_name                 : magic
+
+  - title                                 : Seamless Estate Sale Management
+    description                           : Manage your entire estate sale in one place—inventory, pricing, labeling, sales tracking, and fulfillment.
+    fontawesome_icon_name                 : toolbox
+
+  - title                                 : Smart Image Recognition
+    description                           : Snap a photo, and our AI identifies, categorizes, and prices items in seconds—no manual data entry needed.
+    fontawesome_icon_name                 : camera
+
+  - title                                 : Live Sales Tracking & Reporting
+    description                           : Track every sale in real-time, generate reports, and analyze performance instantly from your dashboard.
+    fontawesome_icon_name                 : chart-line
+
+  - title                                 : Integrated Barcode Labeling
+    description                           : Generate and print barcode labels directly from the app, ensuring quick item lookup and seamless checkout.
+    fontawesome_icon_name                 : barcode
+
+  - title                                 : Online & In-Person Selling
+    description                           : List items for sale online and in-person simultaneously, with automated fulfillment and nationwide shipping options.
+    fontawesome_icon_name                 : shopping-cart
 
 # Theme Settings
 topbar_color                              : "#2C3E50"
