@@ -580,7 +580,7 @@ footer {
 	display: inline-flex;
 	align-items: center;
 	background-color: $accent-color;
-	color: white;
+	color: #ffffff;
 	padding: 14px 32px;
 	border-radius: 8px;
 	text-decoration: none;
@@ -588,6 +588,10 @@ footer {
 	font-size: 16px;
 	transition: all 0.3s ease;
 	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+	&, &:link, &:visited, &:hover, &:active {
+		color: #ffffff;
+	}
 }
 
 .contactButton:hover {
