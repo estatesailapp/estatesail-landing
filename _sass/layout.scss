@@ -546,79 +546,106 @@ nav > ul li a:active {
 
 footer {
 	grid-area: f;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	background-color: #f8f9fa;
+	padding: 80px 0;
+	margin-top: 60px;
+}
+
+.footerContent {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+	text-align: center;
 }
 
 .footerText {
-	color: $footer-text-color;
-	display: block;
-	line-height: 1.5;
-	width: 100%;
-	text-align: center;
-	padding-top: 70px;
-	padding-bottom: 70px;
+	margin-bottom: 40px;
+}
+
+.footerText h3 {
+	color: $feature-title-color;
+	font-size: 24px;
+	margin-bottom: 16px;
+}
+
+.footerText p {
+	color: $feature-text-color;
+	font-size: 18px;
+	margin-bottom: 24px;
+}
+
+.contactButton {
+	display: inline-flex;
+	align-items: center;
+	background-color: $accent-color;
+	color: white;
+	padding: 12px 24px;
+	border-radius: 6px;
+	text-decoration: none;
+	font-weight: 500;
+	transition: background-color 0.3s ease;
+}
+
+.contactButton:hover {
+	background-color: darken($accent-color, 10%);
+}
+
+.contactButton i {
+	margin-right: 8px;
 }
 
 .footerIcons {
-	padding-bottom: 70px;
-	display: flex;
-	flex: 0 0 100%;
-	justify-content: center;
+	margin-bottom: 40px;
+}
+
+.footerIcons a {
+	margin: 0 10px;
+	text-decoration: none;
 }
 
 .footerLinks {
-	display: flex;
-	text-align: center;
-	padding-bottom: 70px;
+	margin-bottom: 30px;
 }
 
 .footerLinks a {
-	margin-right: 30px;
+	color: $feature-text-color;
+	text-decoration: none;
+	margin: 0 20px;
+	font-size: 16px;
+	transition: color 0.3s ease;
 }
 
-.footerLinks a:last-child {
-	margin-right: 0px;
+.footerLinks a:hover {
+	color: $accent-color;
 }
 
+.copyright {
+	color: $footer-text-color;
+	font-size: 14px;
+}
 
 @media only screen and (max-width: 768px) {
+	footer {
+		padding: 60px 0;
+	}
+
+	.footerText h3 {
+		font-size: 20px;
+	}
+
+	.footerText p {
+		font-size: 16px;
+	}
 
 	.footerLinks {
+		display: flex;
 		flex-direction: column;
 	}
 
 	.footerLinks a {
-		justify-content: stretch;
-		margin-right: 0px;
-		margin-top: 20px;
+		margin: 10px 0;
 	}
-
-	.footerLinks a:first-child {
-		margin-top: 0px;
-	}	
-
 }
-
-@media only screen and (max-width: 992px) {
-	
-	.footerText {
-		color: $footer-text-color;
-		display: block;
-		line-height: 1.5;
-		width: 100%;
-		text-align: center;
-		padding-top: 54px;
-		padding-bottom: 61px;
-	}
-	
-	.footerIcons {
-		padding-bottom: 70px;
-		display: flex;
-	}
-	
-} 
 
 .hidden {
 	display: none;
