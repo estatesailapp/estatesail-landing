@@ -1,0 +1,121 @@
+// Policy Pages Styling
+.page-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: $feature-text-color;
+
+    .page-title {
+        text-align: center;
+        margin-bottom: 60px;
+
+        h1 {
+            color: $feature-title-color;
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .last-updated {
+            color: $feature-text-color;
+            opacity: 0.7;
+            font-size: 14px;
+        }
+    }
+
+    h2 {
+        color: $feature-title-color;
+        font-size: 24px;
+        font-weight: 600;
+        margin: 40px 0 20px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid rgba($feature-title-color, 0.1);
+    }
+
+    h3 {
+        color: $feature-title-color;
+        font-size: 20px;
+        font-weight: 500;
+        margin: 30px 0 15px;
+    }
+
+    p {
+        line-height: 1.6;
+        margin-bottom: 16px;
+        font-size: 16px;
+    }
+
+    ul {
+        margin: 16px 0;
+        padding-left: 24px;
+
+        li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+            position: relative;
+            
+            &::before {
+                content: "•";
+                color: $accent-color;
+                font-weight: bold;
+                position: absolute;
+                left: -20px;
+            }
+        }
+    }
+
+    a {
+        color: $accent-color;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: darken($accent-color, 10%);
+            text-decoration: underline;
+        }
+    }
+
+    .contact-section {
+        background: #f8f9fa;
+        padding: 24px;
+        border-radius: 8px;
+        margin-top: 40px;
+
+        h2 {
+            margin-top: 0;
+            border-bottom: none;
+        }
+
+        a {
+            display: inline-flex;
+            align-items: center;
+            
+            i {
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .page-content {
+        padding: 20px;
+
+        .page-title {
+            margin-bottom: 40px;
+
+            h1 {
+                font-size: 28px;
+            }
+        }
+
+        h2 {
+            font-size: 22px;
+            margin: 30px 0 15px;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+    }
+} 
