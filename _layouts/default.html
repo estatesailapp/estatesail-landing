@@ -63,6 +63,15 @@
                             <p class ="appDescription">
                                 {{ site.app_description }}
                             </p>
+                            
+                            <!-- Integration section moved inside description container -->
+                            <div class="integration-section" style="margin-top: 25px;">
+                                <span class="integration-text" style="font-weight: 400; color: #ffffff; font-size: 14px;">Integrated with</span>
+                                <div style="display: flex; align-items: center;">
+                                    <img class="integration-logo" src="assets/Square_Logo_package_USEN/PNG_RGB/Square_LogoLockup_White.png" alt="Square" style="margin-right: 25px;">
+                                    <img class="integration-logo" src="assets/Shopify brand assets/01 - Logo/png/shopify_logo_white.png" alt="Shopify">
+                                </div>
+                            </div>
                         </div>
                         
                         <!-- Responsive integration section - changes layout based on screen size -->
@@ -73,7 +82,6 @@
                                     display: flex;
                                     flex-direction: column;
                                     align-items: flex-start;
-                                    margin: 30px 0 0;
                                 }
                                 .integration-text {
                                     margin-bottom: 15px;
@@ -91,17 +99,17 @@
                             @media only screen and (max-width: 767px) {
                                 /* Mobile version - completely different layout */
                                 .appDescriptionContainer {
-                                    margin-bottom: 20px; /* Reduced space after text */
+                                    margin-bottom: 30px; /* Add space after the combined description+integration */
+                                    padding-bottom: 10px;
                                 }
                                 
                                 .integration-section {
                                     display: flex;
                                     flex-direction: column;
                                     align-items: flex-start;
-                                    position: relative; /* Enable positioning control */
-                                    margin: 0 0 30px; /* Add bottom margin for separation */
+                                    position: relative;
                                     padding: 0;
-                                    z-index: 5; /* Ensure it's above other elements */
+                                    z-index: 5;
                                 }
                                 
                                 .integration-text {
@@ -120,8 +128,8 @@
                                 
                                 /* Ensure content stays within the background on mobile */
                                 .headerBackground {
-                                    padding-bottom: 150px !important; /* Extended padding to keep content within */
-                                    min-height: 100vh; /* Ensure background covers the full viewport height */
+                                    padding-bottom: 80px !important; /* Less padding since integration is inside description */
+                                    min-height: auto; /* Let content determine height */
                                 }
                                 
                                 /* Move download button closer to integration section */
@@ -137,14 +145,6 @@
                                 width: auto;
                             }
                         </style>
-                        
-                        <div class="integration-section">
-                            <span class="integration-text" style="font-weight: 400; color: #ffffff; font-size: 14px;">Integrated with</span>
-                            <div style="display: flex; align-items: center;">
-                                <img class="integration-logo" src="assets/Square_Logo_package_USEN/PNG_RGB/Square_LogoLockup_White.png" alt="Square" style="margin-right: 25px;">
-                                <img class="integration-logo" src="assets/Shopify brand assets/01 - Logo/png/shopify_logo_white.png" alt="Shopify">
-                            </div>
-                        </div>
                         
                         <!-- Spacer that only appears on desktop -->
                         <div class="spacer"></div>
