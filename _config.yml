@@ -18,7 +18,7 @@ enable_smart_app_banner                   : true
 
 # Screenshots
 device_color                              : black
-your_screenshot                           : assets/screenshot/yourscreenshot.png
+your_screenshot                           : assets/screenshot/yourscreenshot2.PNG
 
 # Information About Yourself
 your_name                                 : EstateSail Team                                
