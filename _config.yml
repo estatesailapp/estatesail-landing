@@ -15,6 +15,7 @@ app_price                                 : Available Now!
 app_description                           : The future of estate sale management is here. EstateSail transforms how you run estate sales with AI-powered appraisals, professional tools, and built-in Square and Shopify integration.
 
 enable_smart_app_banner                   : true                                     
+show_integrations                          : true
 
 # Screenshots
 device_color                              : black

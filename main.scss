@@ -30,8 +30,68 @@ $feature-icons-background-color: {{ site.feature_icons_background_color }};
 $social-icons-foreground-color: {{ site.social_icons_foreground_color }};
 $social-icons-background-color: {{ site.social_icons_background_color }};
 
-@import 
-    "base",
-    "layout",
-    "github-markdown",
-    "policy"
+@import "_sass/variables";
+@import "_sass/base";
+@import "_sass/layout";
+@import "_sass/features";
+@import "_sass/header";
+@import "_sass/footer";
+@import "_sass/devices";
+@import "_sass/screenshots";
+
+// Integration Logos
+.integrations {
+    text-align: center;
+    padding: 70px 0;
+    background-color: #f8f8f8;
+}
+
+.integrationsTitle {
+    font-family: sans-serif;
+    color: #2C3E50;
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.integrationsLogos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.integrationItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.integrationLogo {
+    height: auto;
+    max-height: 50px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.squareLogo {
+    max-width: 170px;
+}
+
+.shopifyLogo {
+    max-width: 170px;
+}
+
+@media only screen and (max-width: 768px) {
+    .integrationsLogos {
+        gap: 40px;
+    }
+    
+    .integrationLogo {
+        max-height: 40px;
+    }
+}
