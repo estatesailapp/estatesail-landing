@@ -100,26 +100,29 @@
                                 /* Mobile version layout improvements */
                                 .headerBackground {
                                     height: auto !important; /* Allow height to expand with content */
-                                    min-height: 650px !important; /* Ensure minimum height to contain everything */
-                                    padding-bottom: 50px !important; /* Add padding at the bottom */
+                                    min-height: 700px !important; /* Increased min-height to contain all elements */
+                                    padding-bottom: 80px !important; /* Increased padding at the bottom */
+                                    overflow: visible !important; /* Ensure content doesn't get cut off */
                                 }
                                 
                                 /* Force app info to contain everything properly */
                                 .appInfo {
                                     position: relative;
                                     z-index: 10;
-                                    padding-bottom: 60px; /* Add extra padding to contain everything */
+                                    padding-bottom: 80px; /* Increased padding to contain everything */
+                                    margin-bottom: 40px; /* Added margin at bottom */
                                 }
                                 
                                 .appDescriptionContainer {
-                                    margin-bottom: 15px;
+                                    margin-bottom: 20px;
+                                    position: relative;
                                 }
                                 
                                 .integration-section {
                                     display: flex;
                                     flex-direction: column;
                                     align-items: flex-start;
-                                    margin-bottom: 30px !important;
+                                    margin-bottom: 40px !important;
                                     position: relative;
                                     padding: 0;
                                     z-index: 5;
@@ -141,9 +144,14 @@
                                 
                                 /* Fix download button positioning */
                                 .downloadButtonsContainer {
-                                    margin-top: 0;
+                                    margin-top: 10px;
                                     position: relative;
                                     z-index: 5;
+                                }
+                                
+                                /* Ensure the container has appropriate margin */
+                                .container {
+                                    padding-bottom: 60px;
                                 }
                             }
                             
