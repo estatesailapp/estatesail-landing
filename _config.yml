@@ -2,8 +2,8 @@
 page_title                                : EstateSail                                    
 
 # App Info
-ios_app_id                                :                                
-ios_app_country                           :                                        
+ios_app_id                                : 6741873963                               
+ios_app_country                           : us                                       
 
 appstore_link                             :                                           
 playstore_link                            :                                           
@@ -14,7 +14,7 @@ app_name                                  : EstateSail
 app_price                                 : Available Now!                                           
 app_description                           : The future of estate sale management is here. EstateSail will transform how you run estate sales with AI-powered appraisals and professional tools.
 
-enable_smart_app_banner                   : false                                      
+enable_smart_app_banner                   : true                                     
 
 # Screenshots
 device_color                              : black
