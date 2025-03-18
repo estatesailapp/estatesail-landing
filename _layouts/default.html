@@ -91,16 +91,17 @@
                             @media only screen and (max-width: 767px) {
                                 /* Mobile version - completely different layout */
                                 .appDescriptionContainer {
-                                    margin-bottom: 40px; /* Add space after the text */
+                                    margin-bottom: 20px; /* Reduced space after text */
                                 }
                                 
                                 .integration-section {
                                     display: flex;
                                     flex-direction: column;
                                     align-items: flex-start;
-                                    position: static; /* Reset any relative positioning */
-                                    margin: 0 0 20px; /* Reduced spacing */
+                                    position: relative; /* Enable positioning control */
+                                    margin: 0 0 30px; /* Add bottom margin for separation */
                                     padding: 0;
+                                    z-index: 5; /* Ensure it's above other elements */
                                 }
                                 
                                 .integration-text {
@@ -117,14 +118,17 @@
                                     display: none;
                                 }
                                 
-                                /* Adjust the download button container */
-                                .downloadButtonsContainer {
-                                    margin-top: 20px; /* Much less top margin */
+                                /* Ensure content stays within the background on mobile */
+                                .headerBackground {
+                                    padding-bottom: 150px !important; /* Extended padding to keep content within */
+                                    min-height: 100vh; /* Ensure background covers the full viewport height */
                                 }
                                 
-                                /* Ensure the header has proper spacing */
-                                .headerBackground {
-                                    padding-bottom: 20px !important;
+                                /* Move download button closer to integration section */
+                                .downloadButtonsContainer {
+                                    margin-top: 0; /* No extra margin */
+                                    position: relative; /* Enable positioning */
+                                    z-index: 5; /* Ensure it's above other elements */
                                 }
                             }
                             
