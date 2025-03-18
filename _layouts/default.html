@@ -73,38 +73,46 @@
                                     display: flex;
                                     flex-direction: column;
                                     align-items: flex-start;
-                                    margin: 30px 0 0; /* Remove bottom margin, we'll use a spacer */
+                                    margin: 30px 0 0;
                                 }
                                 .integration-text {
                                     margin-bottom: 15px;
                                 }
                             }
                             @media only screen and (max-width: 767px) {
-                                /* Mobile version - horizontal layout */
+                                /* Mobile version needs much more space at the bottom */
                                 .integration-section {
                                     display: flex;
                                     align-items: center;
-                                    margin: 30px 0 0; /* Remove bottom margin, we'll use a spacer */
-                                    padding-bottom: 25px; /* Add padding below logos on mobile */
+                                    margin: 30px 0 0;
+                                    position: relative;
+                                    bottom: 90px; /* Move up significantly from the bottom */
                                 }
                                 .integration-text {
                                     margin-right: 15px;
                                 }
                                 
-                                /* Ensure the logos don't hug the bottom of the container on mobile */
+                                /* Add significant padding to the bottom of header background */
                                 .headerBackground {
-                                    padding-bottom: 20px;
+                                    padding-bottom: 50px !important;
+                                }
+                                
+                                /* Adjust the download button container position */
+                                .downloadButtonsContainer {
+                                    position: relative;
+                                    z-index: 10; /* Ensure it's above other elements */
+                                    margin-top: 100px; /* Add significant top margin */
                                 }
                             }
                             
                             .integration-logo {
-                                height: 40px; /* Even larger logos */
+                                height: 40px;
                                 width: auto;
                             }
                             
                             /* Clear height spacer to ensure separation */
                             .spacer {
-                                height: 60px;
+                                height: 80px;
                                 width: 100%;
                                 clear: both;
                                 display: block;
