@@ -17,4 +17,40 @@
 		</div>
 		<p class="headerName">{{ site.app_name }}</p>
 	</div>
+	
+	<!-- Shop button -->
+	<style>
+	    .shop-button {
+	        position: absolute;
+	        top: 20px;
+	        right: 20px;
+	        background-color: #2C7CE6;
+	        color: white;
+	        padding: 8px 16px;
+	        border-radius: 6px;
+	        font-weight: 600;
+	        font-size: 14px;
+	        text-decoration: none;
+	        text-transform: uppercase;
+	        letter-spacing: 0.5px;
+	        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	        transition: all 0.2s ease;
+	    }
+	    
+	    .shop-button:hover {
+	        background-color: #1e6fd8;
+	        transform: translateY(-2px);
+	        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+	    }
+	    
+	    @media only screen and (max-width: 767px) {
+	        .shop-button {
+	            top: 15px;
+	            right: 15px;
+	            padding: 6px 12px;
+	            font-size: 12px;
+	        }
+	    }
+	</style>
+	<a href="https://shop.estatesail.us/" class="shop-button">Shop</a>
 </header>
