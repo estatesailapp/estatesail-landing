@@ -104,7 +104,17 @@
                                     z-index: 1; /* Set a base z-index */
                                 }
                                 
-                                /* Use a pseudo-element to extend the blue background */
+                                /* Fixed positioning of imageWrapper to preserve the background image */
+                                .imageWrapper {
+                                    background-attachment: scroll !important; /* Fix background scrolling */
+                                    background-position: center !important; /* Center the background */
+                                    background-size: cover !important; /* Cover the area */
+                                    height: auto !important; /* Let it adjust to content */
+                                    min-height: 720px !important; /* Match headerBackground height */
+                                    overflow: visible !important; /* Allow content to show */
+                                }
+                                
+                                /* Use a pseudo-element to extend the colored overlay */
                                 .headerBackground::after {
                                     content: "";
                                     position: absolute;
@@ -112,7 +122,7 @@
                                     left: 0;
                                     right: 0;
                                     bottom: -100px; /* Extend below the container */
-                                    background-color: #2C3E50; /* Same as the headerBackground */
+                                    background-color: rgba(44, 62, 80, 0.8); /* Same color with transparency to show image */
                                     z-index: -1; /* Place behind content */
                                 }
                                 
