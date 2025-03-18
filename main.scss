@@ -30,14 +30,11 @@ $feature-icons-background-color: {{ site.feature_icons_background_color }};
 $social-icons-foreground-color: {{ site.social_icons_foreground_color }};
 $social-icons-background-color: {{ site.social_icons_background_color }};
 
-@import "_sass/variables";
-@import "_sass/base";
-@import "_sass/layout";
-@import "_sass/features";
-@import "_sass/header";
-@import "_sass/footer";
-@import "_sass/devices";
-@import "_sass/screenshots";
+@import 
+    "base",
+    "layout",
+    "github-markdown",
+    "policy";
 
 // Integration Logos
 .integrations {
