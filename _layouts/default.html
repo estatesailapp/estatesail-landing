@@ -97,28 +97,41 @@
                             }
                             
                             @media only screen and (max-width: 767px) {
-                                /* Mobile version - completely different layout */
+                                /* Mobile version layout improvements */
+                                .headerBackground {
+                                    height: auto !important; /* Allow height to expand with content */
+                                    min-height: 650px !important; /* Ensure minimum height to contain everything */
+                                    padding-bottom: 50px !important; /* Add padding at the bottom */
+                                }
+                                
+                                /* Force app info to contain everything properly */
+                                .appInfo {
+                                    position: relative;
+                                    z-index: 10;
+                                    padding-bottom: 60px; /* Add extra padding to contain everything */
+                                }
+                                
                                 .appDescriptionContainer {
-                                    margin-bottom: 30px; /* Add space after the combined description+integration */
-                                    padding-bottom: 10px;
+                                    margin-bottom: 15px;
                                 }
                                 
                                 .integration-section {
                                     display: flex;
                                     flex-direction: column;
                                     align-items: flex-start;
+                                    margin-bottom: 30px !important;
                                     position: relative;
                                     padding: 0;
                                     z-index: 5;
                                 }
                                 
                                 .integration-text {
-                                    margin-bottom: 10px; /* Text above logos on mobile */
+                                    margin-bottom: 10px;
                                     margin-right: 0;
                                 }
                                 
                                 .integration-logo {
-                                    height: 30px; /* Slightly smaller on mobile */
+                                    height: 30px;
                                 }
                                 
                                 /* No spacer needed on mobile */
@@ -126,17 +139,11 @@
                                     display: none;
                                 }
                                 
-                                /* Ensure content stays within the background on mobile */
-                                .headerBackground {
-                                    padding-bottom: 80px !important; /* Less padding since integration is inside description */
-                                    min-height: auto; /* Let content determine height */
-                                }
-                                
-                                /* Move download button closer to integration section */
+                                /* Fix download button positioning */
                                 .downloadButtonsContainer {
-                                    margin-top: 0; /* No extra margin */
-                                    position: relative; /* Enable positioning */
-                                    z-index: 5; /* Ensure it's above other elements */
+                                    margin-top: 0;
+                                    position: relative;
+                                    z-index: 5;
                                 }
                             }
                             
