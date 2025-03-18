@@ -12,7 +12,7 @@ presskit_download_link                    :
 app_icon                                  : assets/app-icon-new.png                      
 app_name                                  : EstateSail                                           
 app_price                                 : Available Now!                                           
-app_description                           : The future of estate sale management is here. EstateSail will transform how you run estate sales with AI-powered appraisals and professional tools.
+app_description                           : The future of estate sale management is here. EstateSail transforms how you run estate sales with AI-powered appraisals, professional tools, and built-in Square and Shopify integration.
 
 enable_smart_app_banner                   : true                                     
 
@@ -41,6 +41,10 @@ features                                  :
   - title                                 : Seamless Estate Sale Management
     description                           : Manage your entire estate sale in one place—inventory, pricing, labeling, sales tracking, and fulfillment.
     fontawesome_icon_name                 : toolbox
+
+  - title                                 : Square & Shopify Integration
+    description                           : Process payments easily with built-in Square integration and sell online with seamless Shopify connection for expanded reach.
+    fontawesome_icon_name                 : exchange-alt
 
   - title                                 : Smart Image Recognition
     description                           : Snap a photo, and our AI identifies, categorizes, and prices items in seconds—no manual data entry needed.
